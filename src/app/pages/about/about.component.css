@@ -1,0 +1,236 @@
+/* .padre{
+    border:2px solid orange;
+    background-color:rgb(6, 70, 109);
+    width: 100%;
+    height:89vh;
+    display:flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+ body {
+     font-family: 'Roboto', sans-serif !important; /* Aplica la fuente Roboto */
+ }
+ 
+ .padre{
+    /* border:2px solid orange; */
+    width: 100%;
+    height:79vh;
+    display:flex;
+    flex-direction: row;
+}
+
+.hijo{
+    background-color:rgb(6, 70, 109);
+    background-color: black;
+    background-color: rgb(35, 35, 35);
+    /* background-color: white; */
+    /* background-color: black; */
+    /* border: 2px solid greenyellow; */
+    height:100%;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 40px 0px;
+}
+
+#about{
+    width: 25%;
+    margin-top: 40px;
+    
+
+}
+
+ 
+body {
+    font-family: Arial, sans-serif; /* Cambia la fuente a Arial */
+    background-color: #f4f4f4; /* Color de fondo */
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina padding por defecto */
+}
+
+.container {
+    width: 80%; /* Ancho del contenedor */
+    margin: auto; /* Centra el contenedor */
+    padding: 20px; /* Padding interno */
+    text-align: center; /* Centra el texto */
+}
+
+h1 {
+    color: #35424a; /* Color del título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+h1 {
+    color: rgb(240, 239, 239);
+    margin-top: 60px;
+}
+
+h2 {
+    color: rgba(231, 229, 229, 0.893);
+    width: 38%; /* Mantiene el ancho */
+    text-align: center; /* Centra el texto */
+    margin: 0; /* Elimina márgenes que podrían causar saltos */
+}
+
+
+
+.card-container {
+    display: flex; /* Usa flexbox para las tarjetas */
+    justify-content: space-between; /* Espacio entre las tarjetas */
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan */
+}
+
+.card {
+    background-color: white; /* Color de fondo de las tarjetas */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra de las tarjetas */
+    padding: 20px; /* Padding interno de las tarjetas */
+    margin: 10px; /* Margen entre tarjetas */
+    width: 30%; /* Ancho de cada tarjeta */
+    min-width: 250px; /* Ancho mínimo de las tarjetas */
+    width:600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+
+.card h2 {
+    color: #35424a; /* Color de los títulos de las tarjetas */
+    /* color: rgb(26, 110, 219); */
+    margin-bottom: 20px; /* Espacio debajo del título de la tarjeta */
+    margin-top: 30px;
+    /* border: 2px solid red; */
+    /* background-color: rgb(255, 221, 0); */
+    background-color: (39, 125, 172, 0.949);
+    width: 420px;
+}
+
+.card , .card ul {
+    color: #333; /* Color del texto */
+    text-align: center; /* Alineación del texto a la izquierda */
+    /* border: 2px solid greenyellow; */
+    width: 500px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+li{
+    /* border: 2px solid blue; */
+    margin: 20px 10px 20px 10px;
+    text-align: left; /* Alineación del texto a la izquierda */
+    width: 75%;
+
+
+}
+
+p{
+    /* color:red; */
+    /* border:2px solid black; */
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 700;
+}
+
+
+
+.button{
+    /* border:2px solid green; */
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100px;
+    margin-top: 50px;
+
+}
+
+.evidence{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* border:2px solid blue; */
+    width: 90%;
+    margin-top: 50px;
+}
+
+
+.evidence2{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border:2px solid green; */
+    width:30%;
+
+}
+
+
+
+#uam{
+    margin-top: 20px;
+    width:420px;
+    line-height: 1.6;
+
+}
+
+
+.evi{
+    /* border:2px solid red; */
+    width: 90px;
+    height: 20px;
+    /* background-color: aqua; */
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+.evix{
+        /* border:2px solid red; */
+        width: 90px;
+        height: 20px;
+        /* background-color: aqua; */
+        margin-bottom: 5px;
+        font-weight: 400;
+    
+}
+
+
+button {
+    background:rgba(111, 135, 148, 0.949);
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 150px;
+    margin:20px
+}s
+
+
+.but {
+    display: flex;
+    flex-direction: column; /* Alinea el enlace y el botón verticalmente */
+    align-items: left; /* Centra el contenido */
+    justify-content: center;
+    width: 100%;
+}
+
+h4{
+    color: rgb(26, 93, 161);
+    color: rgb(78, 113, 148);
+    /* color:rgba(39, 125, 172, 0.949) */
+}
+
+button:hover {
+    background-color: rgb(255, 221, 0); /* Color de fondo del botón */
+    background-color: rgb(65, 122, 168);
+
+}

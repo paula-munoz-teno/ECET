@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif !important; /* Aplica la fuente Roboto */
+    margin: 0; /* Elimina márgenes del body */
+}
+
+.padre {
+    width: 100%;
+    height:79vh;
+    display: flex;
+    flex-direction: column; /* Cambiado a columna para evitar problemas de alineación */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+}
+
+.hijo {
+    background-color: rgb(6, 70, 109);
+    background-color: black;
+    background-color: rgb(35, 35, 35);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    /* padding-top: 5px; */
+}
+
+h2 {
+    color: rgba(231, 229, 229, 0.893);
+    width: 38%; /* Mantiene el ancho */
+    text-align: center; /* Centra el texto */
+    margin: 0; /* Elimina márgenes que podrían causar saltos */
+}
+
+.highlight {
+    color: rgb(255, 221, 0); /* Color de la palabra resaltada */
+    color:white;
+    text-shadow: 
+    0 0 5px #ffffff, /* Brillo blanco */
+    0 0 10px #ffffff, /* Brillo más fuerte */
+    0 0 15px #abaaab, /* Brillo de color */
+    0 0 20px #9a989a, /* Brillo más fuerte de color */
+    0 0 25px #797779; /* Brillo aún más fuerte de color */
+}
+
+.video-container {
+    width: 50%; /* Ajusta el ancho según sea necesario */
+    height: auto; /* Permite que el contenedor ajuste su altura automáticamente */
+    max-width: 800px; /* Ancho máximo */
+    overflow: hidden; /* Para que no se desborde el contenido */
+    margin-top: 120px; /* Espaciado superior para el video */
+}
+
+video {
+    width: 100%; /* El vídeo ocupará todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción del vídeo */
+}
