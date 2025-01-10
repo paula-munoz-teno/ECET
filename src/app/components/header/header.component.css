@@ -1,7 +1,7 @@
 
 
 .header{
-    background-color: white(0, 0, 0, 0.82);
+    /* background-color: white(0, 0, 0, 0.82); */
     /* background-color: rgba(183, 196, 213, 0.915);
     background-color: rgb(198, 227, 166);
     background-color: black; */
@@ -27,6 +27,7 @@
     /* color:rgba(212, 202, 188, 0.412); */
     align-content: center;
     width: 50%;
+
 }
 
 .menu{
@@ -36,6 +37,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;  
+    margin-right: 20px;
 }
 
 a{
@@ -56,4 +58,59 @@ a{
     width: 300px;
     margin-left: 100px;
     
+}
+
+
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .header {
+        flex-direction:column; /* Cambia a columna en móviles */
+        height: auto; /* Ajusta la altura */
+    
+    }
+
+    #logo{
+        margin: 0;
+    }
+    
+
+    #title{
+       display: none;
+    
+    }
+
+    .menu {
+        width: 100%; /* Toma todo el ancho en móviles */
+        flex-direction: row; /* Cambia a columna en móviles */
+        align-items: center; /* Centra los elementos */
+        height: 60px;
+        margin:0;
+    }
+
+    
+
+    a {
+        font-size: medium; /* Ajusta el tamaño de fuente en móviles */
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        font-size: 0.8em; /* Reduce el tamaño de fuente */
+    }
+.menu {
+        width: 100%; /* Toma todo el ancho en móviles */
+        flex-direction: row; /* Cambia a columna en móviles */
+        align-items: center; /* Centra los elementos */
+        height: 60px;
+        margin:0;
+    }
+    #logo {
+        width: 100%; /* Logo ocupa todo el ancho */
+    }
+
+    a {
+        font-size: smaller; /* Ajusta el tamaño de fuente aún más en móviles pequeños */
+    }
 }

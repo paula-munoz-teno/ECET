@@ -234,3 +234,105 @@ button:hover {
     background-color: rgb(65, 122, 168);
 
 }
+
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 90%) {
+    body {
+        font-size: 90%; /* Reduce el tamaño de fuente del cuerpo al 90% */
+    }
+
+    h1 {
+        font-size: 90%; /* Ajusta el tamaño de fuente del título al 90% */
+    }
+
+    h2 {
+        font-size: 90%; /* Ajusta el tamaño de fuente del subtítulo al 90% */
+    }
+
+    .padre {
+        width: 90%; /* Ajusta el ancho del contenedor al 90% */
+    }
+
+    .card {
+        width: 27%; /* Ajusta el ancho de las tarjetas al 90% de su tamaño original */
+        height: 360px; /* Ajusta la altura de las tarjetas al 90% */
+    }
+
+    .button {
+        width: 90%; /* Ajusta el ancho de los botones al 90% */
+    }
+
+    /* Ajusta otros elementos según sea necesario */
+}
+
+@media (max-width: 2500px) {
+    .card-container {
+        display: flex; /* Usa flexbox para las tarjetas */
+        justify-content: space-evenly; /* Espacio entre las tarjetas */
+        /* Mantiene las tarjetas en una sola fila */
+    }
+
+    .card {
+        width: 30%; /* Ajusta el ancho de las tarjetas para que quepan en la pantalla */
+        height: 400px; /* Mantiene la altura de las tarjetas */
+        margin: 10px; /* Margen entre tarjetas */
+    }
+
+    /* Ajusta otros elementos según sea necesario */
+}
+
+@media (max-width: 1500px) {
+    .padre {
+        flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
+        height: auto; /* Ajusta la altura para que se adapte al contenido */
+        padding: 20px; /* Agrega padding */
+    }
+
+    .hijo {
+        padding: 20px; /* Agrega padding interno */
+    }
+
+    h2 {
+        width: 80%; /* Aumenta el ancho en móviles */
+    }
+
+    .card-container{
+    }
+    .card {
+        width: 90%; /* Aumenta el ancho de las tarjetas en móviles */
+        margin: 10px auto; /* Centra las tarjetas */
+    }
+
+    .video-container {
+        width: 90%; /* Aumenta el ancho del contenedor de video en móviles */
+        margin-top: 60px; /* Reduce el margen superior */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em; /* Ajusta el tamaño de fuente del título */
+    }
+
+    h2 {
+        font-size: 1em; /* Ajusta el tamaño de fuente del subtítulo */
+        width: 90%; /* Aumenta el ancho en móviles pequeños */
+    }
+
+    .card {
+        width: 100%; /* Las tarjetas ocupan todo el ancho */
+        height: auto; /* Ajusta la altura de las tarjetas */
+    }
+
+    .video-container {
+        width: 100%; /* El contenedor de video ocupa todo el ancho */
+        margin-top: 30px; /* Reduce el margen superior */
+    }
+
+    .button {
+        width: 100%; /* Botones ocupan todo el ancho */
+        margin: 10px 0; /* Margen vertical entre botones */
+    }
+}
+

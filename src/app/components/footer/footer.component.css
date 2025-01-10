@@ -22,3 +22,38 @@ a{
     height: 50px;
     width: 90px;
 }
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Cambia a columna en móviles */
+        height: auto; /* Ajusta la altura */
+        padding: 20px; /* Agrega padding */
+        align-items: center; /* Centra los elementos */
+        justify-items: center;
+        background-color: white;
+
+    }
+
+    a {
+        font-size: medium; /* Ajusta el tamaño de fuente en móviles */
+        margin: 5px 0; /* Agrega margen vertical entre enlaces */
+    }
+
+    #uam {
+      margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        font-size: 0.8em; /* Reduce el tamaño de fuente */
+    }
+
+    a {
+        font-size: smaller; /* Ajusta el tamaño de fuente aún más en móviles pequeños */
+    }
+
+    #uam {
+        margin-bottom: 5px;
+      }
+}
