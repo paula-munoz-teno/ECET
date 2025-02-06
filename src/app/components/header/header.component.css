@@ -31,7 +31,7 @@
 }
 
 .menu{
-    border:1px solid greenyellow;
+    /* border:1px solid greenyellow; */
     width: 50%;
     gap:10px;
     display: flex;
@@ -61,7 +61,7 @@ a{
 }
 
 
-@media (min-width: 500px) and (max-width: 1500px) {
+@media (min-width: 769px) and (max-width: 1500px) {
     #logo{
         /* border: 2px solid red; */
         height: 80px;
@@ -71,13 +71,49 @@ a{
     }
 
     .menu{
-        border:1px solid greenyellow;
+        /* border:1px solid greenyellow; */
         width: 50%;
         gap:10px;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;  
         margin-right: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #title {
+        display: none; /* Oculta el título en pantallas pequeñas */
+    }
+
+    .header {
+        flex-direction: column; /* Cambia la dirección del flex a columna */
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        padding: 10px 0; /* Agrega un poco de padding para separación */
+    }
+
+    #logo {
+        /* border: 2px solid red; */
+        height: 80px; /* Ajusta la altura del logo */
+        width: auto; /* Permite que el ancho se ajuste automáticamente */
+        margin-top: 5px; /* Elimina márgenes */
+        margin-right:60px; 
+        margin-bottom: 10px; 
+        /* Agrega un margen inferior para separación */
+    }
+
+    .menu {
+        width: 100%; /* Cambia el ancho del menú a 100% */
+        margin-right: 0; /* Elimina el margen derecho */
+        /* margin-left: 35px; */
+        margin-bottom: 20px;
+        /* justify-content: space-around;  */
+        /* Cambia la justificación para mejor distribución */
+    }
+
+    a {
+        font-size: medium; /* Reduce el tamaño de la fuente para enlaces */
     }
 }
 

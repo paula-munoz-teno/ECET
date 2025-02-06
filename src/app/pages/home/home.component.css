@@ -12,7 +12,8 @@ body {
     flex-direction: column; /* Cambiado a columna para evitar problemas de alineación */
     justify-content: center; /* Centra verticalmente */
     align-items: center; /* Centra horizontalmente */
-    border: 2px solid red; /* Añadido borde */
+    /* border: 2px solid red;  */
+    /* Añadido borde */
 }
 
 .hijo {
@@ -23,7 +24,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid greenyellow; /* Añadido borde */
+    /* border: 2px solid greenyellow;  */
+    /* Añadido borde */
 }
 
 h1 {
@@ -63,9 +65,22 @@ video {
     height: auto; /* Mantiene la proporción del vídeo */
 }
 
-@media (min-width: 500px) and (max-width: 1500px) {
+@media (min-width: 1283px) and (max-width: 1500px) {
     .padre {
         height: 73vh; /* Ajusta la altura para pantallas más grandes */
+        border:2px solid red;
+    }
+
+    .hijo {
+        background-color: rgb(35, 35, 35);
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid greenyellow; 
+        /* Añadido borde */
     }
 
     h1 {
@@ -75,6 +90,7 @@ video {
     }
     
     h2 {
+        /* border: solid 2px red; */
         color: rgba(231, 229, 229, 0.893);
         width: 70%; /* Mantiene el ancho */
         text-align: center; /* Centra el texto */
@@ -83,9 +99,50 @@ video {
     }
 
     .video-container {
-        width: 50%; /* Ajusta el ancho según sea necesario */
-        height: 40%; /* Permite que el contenedor ajuste su altura automáticamente */
-        margin-top: 5%; /* Espaciado superior para el video */
+        /* border: 2px solid lavender; */
+        width: 80%; /* Ajusta el ancho según sea necesario */
+        height: 55%; /* Permite que el contenedor ajuste su altura automáticamente */
+        margin-top: 3%; /* Espaciado superior para el video */
+    }
+    
+    video {
+        width: 100%; /* El vídeo ocupará todo el ancho del contenedor */
+        height: 100%; /* Mantiene la proporción del vídeo */
+    }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1283px) {
+    .padre {
+        height: 73vh; /* Ajusta la altura para pantallas más grandes */
+    }
+
+
+
+    h1 {
+        color: white;
+        text-align: center;
+        font-size: xx-large;
+    }
+
+    .hidden-text {
+        display: none; /* Oculta el texto adicional */
+    }
+    h2 {
+        /* border: solid 2px red; */
+        color: rgba(231, 229, 229, 0.893);
+        width: 70%; /* Mantiene el ancho */
+        text-align: center; /* Centra el texto */
+        margin: 0; /* Elimina márgenes que podrían causar saltos */
+        font-size: x-large;
+    }
+
+    .video-container {
+        /* border: 2px solid lavender; */
+        width: 80%; /* Ajusta el ancho según sea necesario */
+        height: 55%; /* Permite que el contenedor ajuste su altura automáticamente */
+        margin-top: 3%; /* Espaciado superior para el video */
     }
     
     video {
@@ -97,8 +154,10 @@ video {
 @media (max-width: 768px) {
     .padre {
         height: auto; /* Ajusta la altura para que se adapte al contenido */
-        padding: 20px; /* Agrega padding */
+        /* padding: 20px;  */
+        /* Agrega padding */
     }
+
 
     h1 {
         display: none; /* Oculta el h1 en móviles */
@@ -109,56 +168,15 @@ video {
         margin-top: 30px;
     }
     
-    #h2e {
-        display: none; /* Oculta el elemento con id h2e */
-    }
+    
     
     .video-container {
         width: 90%; /* Aumenta el ancho del contenedor de video en móviles */
         margin-top: 60px; /* Reduce el margen superior */
+        margin-bottom: 30px;
     }
 
     #h2o {
         display: block; /* Muestra el elemento con id h2o */
-    }
-}
-
-@media (max-width: 768px) {
-    .padre {
-        height: auto; /* Ajusta la altura para que se adapte al contenido */
-        padding: 20px; /* Agrega padding */
-    }
-
-    h1 {
-        display: none; /* Oculta el h1 en móviles */
-    }
-
-    h2 {
-        width: 80%; /* Aumenta el ancho en móviles */
-        margin-top: 30px;
-    }
-    
-    #h2e {
-        display: none; /* Oculta el elemento con id h2e */
-    }
-    
-    .video-container {
-        width: 90%; /* Aumenta el ancho del contenedor de video en móviles */
-        margin-top: 60px; /* Reduce el margen superior */
-    }
-
-    #h2o {
-        display: block; /* Muestra el elemento con id h2o */
-    }
-}
-
-@media (max-width: 480px) {
-    h2 {
-        width: 90%; /* Aumenta el ancho en móviles pequeños */
-    }
-
-    .video-container {
-        width: 100%; /* El contenedor de video ocupa todo el ancho */
-        margin-top: 10px; /* Reduce el margen superior */
     }
 }

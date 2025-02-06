@@ -10,8 +10,7 @@ body {
 }
 
 .hijo {
-    background-color: rgb(6, 70, 109);
-    background-color: black;
+
     background-color: rgb(35, 35, 35);
     /* background-color: #f0f0f0; */
     height: 100%;
@@ -26,6 +25,7 @@ body {
 h1 {
     color: rgb(240, 239, 239);
     margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 #isi #ecet{
@@ -130,4 +130,78 @@ h3{
 .button:hover {
     background-color:rgb(219, 214, 214) ; /* Color de fondo al pasar el ratón */
     background-color: rgb(65, 122, 168);
+
+}
+
+
+
+@media (max-width: 1300px) {
+    .padre {
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        flex-direction: column; /* Cambia la dirección del flex a columna */
+        margin-top: 10px; /* Ajusta el margen superior */
+    }
+
+    .hijo {
+        width: 90%; /* Ajusta el ancho de los hijos */
+        padding: 20px; /* Agrega un poco de padding */
+        align-items: center; /* Centra los elementos dentro de hijo */
+    }
+
+    h1 {
+        font-size: 24px; /* Ajusta el tamaño de la fuente del h1 */
+        margin-top: 30px; /* Reduce el margen superior */
+        margin-bottom: 30px; /* Reduce el margen inferior */
+        text-align: center; /* Centra el texto */
+    }
+
+    #isi #ecet {
+        width: 90%; /* Ajusta el ancho para pantallas más pequeñas */
+        margin: 0 auto; /* Centra el elemento */
+    }
+
+    .card {
+        width: 90%; /* Ajusta el ancho de las tarjetas */
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        margin: 10px auto; /* Agrega margen vertical entre tarjetas y centra */
+    }
+
+    .hijo2 {
+        flex-direction: column; /* Cambia la dirección del flex a columna */
+        align-items: center; /* Centra los elementos */
+        margin-top: 30px; /* Reduce el margen superior */
+    }
+
+    .image-container {
+        width: 90%; /* Ajusta el ancho de la imagen */
+        margin: 0 auto; /* Centra el contenedor de la imagen */
+    }
+
+    .image-container img {
+        width: 100%; /* Asegúrate de que la imagen ocupe todo el ancho del contenedor */
+        display: block; /* Asegura que no haya espacio debajo de la imagen */
+        margin: 0 auto; /* Centra la imagen */
+    }
+
+    h3 {
+        font-size: 20px; /* Ajusta el tamaño de la fuente del h3 */
+        margin-top: 30px; /* Reduce el margen superior */
+        text-align: center; /* Centra el texto */
+    }
+
+    .button {
+        padding: 8px 16px; /* Ajusta el padding del botón */
+        margin-top: 20px; /* Ajusta el margen superior */
+        margin-left: auto; /* Centra el botón */
+        margin-right: auto; /* Centra el botón */
+    }
+
+    
+.button:hover {
+    background-color:rgb(219, 214, 214) ; /* Color de fondo al pasar el ratón */
+    background-color: rgb(65, 122, 168);
+
+}
+
+
 }

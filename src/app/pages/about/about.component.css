@@ -493,11 +493,12 @@ button:hover {
     /* Ajusta otros elementos según sea necesario */
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 2266px) {
     .padre {
         flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
         height: auto; /* Ajusta la altura para que se adapte al contenido */
-        padding: 20px; /* Agrega padding */
+        /* padding: 20px;  */
+        /* Agrega padding */
     }
 
     .hijo {
@@ -510,7 +511,7 @@ button:hover {
 
     
     .card {
-        width: 90%; /* Aumenta el ancho de las tarjetas en móviles */
+        width: 60%; /* Aumenta el ancho de las tarjetas en móviles */
         margin: 10px auto; /* Centra las tarjetas */
     }
 
@@ -520,7 +521,19 @@ button:hover {
     }
 }
 
-@media (max-width: 480px) {
+
+
+@media (max-width: 1030px) {
+       
+    .card {
+        width: 90%; /* Aumenta el ancho de las tarjetas en móviles */
+        margin: 10px auto; /* Centra las tarjetas */
+    }
+
+}
+
+
+@media (max-width: 570px) {
     h1 {
         font-size: 1.5em; /* Ajusta el tamaño de fuente del título */
     }

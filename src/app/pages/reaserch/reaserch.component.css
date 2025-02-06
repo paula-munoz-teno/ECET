@@ -54,6 +54,7 @@ h1{
 
 a{
     color:white;
+    padding-top: 40px;
     
 
 }
@@ -88,7 +89,7 @@ a{
 
 .card {
     background-color: white;
-    border-radius: 500px;
+    /* border-radius: 500px; */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 330px; /* Ancho de cada tarjeta */
@@ -158,4 +159,237 @@ h2{
 #Agus{
     height: 220px;
     width: 190px;
+}
+
+
+
+/* .padre{
+    border:2px solid orange;
+    background-color:rgb(6, 70, 109);
+    width: 100%;
+    height:89vh;
+    display:flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+ body {
+     font-family: 'Roboto', sans-serif !important; /* Aplica la fuente Roboto */
+ }
+ 
+ .padre{
+    /* border:2px solid orange; */
+    width: 100%;
+    height:79vh;
+    display:flex;
+    flex-direction: row;
+}
+
+h3{
+    color:#0056b3;
+    color: rgb(68, 117, 165);
+
+}
+
+.hijo{
+    background-color:rgb(6, 70, 109);
+    background-color: black;
+    background-color: rgb(35, 35, 35);
+    /* background-color: white; */
+    /* background-color: black; */
+    /* border: 2px solid greenyellow; */
+    height:100%;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items:center;
+    padding: 0px 0px 40px 0px;
+}
+
+h1{
+    /* border: 2px solid red; */
+    color:rgb(240, 239, 239);
+    /* color:rgb(255, 251, 0); */
+    margin-top:60px;
+
+}
+
+a{
+    color:white;
+    padding-top: 40px;
+    
+
+}
+.hijo2{
+       /* border: 2px solid greenyellow; */
+    height:70%;
+    width:90%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 0px 40px 0px;
+    margin-top: 50px;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en la siguiente línea */
+
+}
+
+
+.hijo21{
+    /* border: 2px solid greenyellow; */
+ height:100%;
+ width:30%;
+ display:flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+ align-items: center;
+ padding: 0px 0px 40px 0px;
+}
+
+
+
+
+.card {
+    background-color: white;
+    /* border-radius: 500px; */
+    border-radius:15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 330px; /* Ancho de cada tarjeta */
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+p{
+    width:270px;
+}
+
+.fecha{
+font-weight: 700;
+}
+
+#pasado{
+    background-color: rgb(178, 176, 176);
+    background-color: #afbdc4;
+    /* background:rgb(132, 160, 175); */
+
+
+}
+
+.card h2 {
+    /* margin-bottom: 10px; */
+    border-bottom: 2px solid #ccc; /* Línea debajo del título para separarlo visualmente */
+}
+
+h2{
+    color:black;
+    color:white;
+    /* border: 2px solid green; */
+    /* background-color:rgb(255, 221, 0); Color de fondo del botón */
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    width: 30%;
+   
+
+}
+
+.card p {
+    margin-bottom: 20px;
+}
+
+.card button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width: 1350px) {
+    /* Ajustes para el contenedor principal */
+    .padre {
+        border: 2px solid red; /* Cambia el borde para identificar el contenedor */
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        flex-direction: column; /* Cambia la dirección del flex a columna */
+        margin-top: 10px; /* Ajusta el margen superior */
+    }
+
+    /* Estilos para los elementos hijos */
+    .hijo {
+        background-color: rgb(35, 35, 35); /* Mantiene el color de fondo */
+        padding: 20px; /* Agrega padding para un mejor espaciado */
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        justify-content: center; /* Centra el contenido verticalmente */
+        align-items: center; /* Centra el contenido horizontalmente */
+    }
+
+    /* Ajustes para el contenedor de tarjetas */
+    .hijo2 {
+        margin-bottom: 30px; /* Reduce el margen inferior */
+        margin-top: 20px; 
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        flex-direction: column; /* Cambia la dirección del flex a columna para tarjetas en vertical */
+        align-items: center; /* Centra las tarjetas horizontalmente */
+        padding: 0; /* Elimina el padding para un mejor ajuste */
+    }
+
+    /* Estilos para las tarjetas */
+    .hijo21 {
+        width: 100%; /* Asegura que cada tarjeta ocupe el 100% del ancho disponible */
+        display: flex;
+        flex-direction: column; /* Asegura que el contenido de cada tarjeta esté en columna */
+        justify-content: center; /* Centra el contenido verticalmente */
+        align-items: center; /* Centra el contenido horizontalmente */
+        margin: 10px 0; /* Espaciado entre tarjetas */
+    }
+
+    .card {
+        width: 90%; /* Ancho de cada tarjeta, ajustado para pantallas pequeñas */
+        max-width: 600px; /* Ancho máximo para mantener la proporción */
+        height: 250px; /* Permite que la altura se ajuste automáticamente */
+        padding: 15px; /* Padding interno */
+        margin: 10px 0; /* Espaciado entre tarjetas */
+    }
+
+    /* Ajustes para los títulos dentro de las tarjetas */
+    .card h2 {
+        font-size: 1.5em; /* Ajusta el tamaño de la fuente */
+    }
+
+    /* Ajustes para los párrafos dentro de las tarjetas */
+    .card p {
+        font-size: 0.9em; /* Ajusta el tamaño de la fuente */
+    }
+
+    /* Ajustes para los botones dentro de las tarjetas */
+    .card button {
+        padding: 8px 12px; /* Ajusta el padding del botón */
+        font-size: 0.9em; /* Ajusta el tamaño de la fuente del botón */
+    }
+
+    /* Ajustes para el título principal */
+    h1 {
+        margin-top: 30px; /* Reduce el margen superior */
+        font-size: 1.8em; /* Ajusta el tamaño de la fuente */
+    }
+
+    /* Ajustes para los enlaces */
+    a {
+        padding-top: 20px; /* Reduce el padding superior */
+        font-size: 0.9em; /* Ajusta el tamaño de la fuente */
+    }
 }
