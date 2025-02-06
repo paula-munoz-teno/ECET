@@ -7,7 +7,7 @@ body {
 
 .padre {
     width: 100%;
-    height:79vh;
+    height:100vh;
     display: flex;
     flex-direction: column; /* Cambiado a columna para evitar problemas de alineación */
     justify-content: center; /* Centra verticalmente */
@@ -15,8 +15,6 @@ body {
 }
 
 .hijo {
-    background-color: rgb(6, 70, 109);
-    background-color: black;
     background-color: rgb(35, 35, 35);
     width: 100%;
     height: 100%;
@@ -25,6 +23,24 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+
+    .padre {
+        border: 2px solid red;
+        width: 100%;
+        height:73vh;
+        display: flex;
+        flex-direction: column; /* Cambiado a columna para evitar problemas de alineación */
+        justify-content: center; /* Centra verticalmente */
+        align-items: center; /* Centra horizontalmente */
+    }
+
+
+    .hijo {
+        border: 2px solid greenyellow;
+        width: 100%; /* Reduce el ancho para que no ocupe todo el espacio */
+        height: 100%; /* Permite que la altura se ajuste automáticamente */
+    }
 
 h1 {
     color: white;
@@ -61,4 +77,102 @@ h2 {
 video {
     width: 100%; /* El vídeo ocupará todo el ancho del contenedor */
     height: auto; /* Mantiene la proporción del vídeo */
+}
+
+@media (min-width: 500px) and (max-width: 1500px) {
+   
+
+ 
+    .padre {
+        border: 2px solid red;
+        width: 100%;
+        height:73vh;
+        display: flex;
+        flex-direction: column; /* Cambiado a columna para evitar problemas de alineación */
+        justify-content: center; /* Centra verticalmente */
+        align-items: center; /* Centra horizontalmente */
+    }
+
+
+    .hijo {
+        border: 2px solid greenyellow;
+        width: 100%; /* Reduce el ancho para que no ocupe todo el espacio */
+        height: 100%; /* Permite que la altura se ajuste automáticamente */
+    }
+
+    h1 {
+        color: white;
+        text-align: center;
+        font-size: xx-large;
+        /* border: 2px solid greenyellow; */
+        
+    }
+    
+    h2 {
+        color: rgba(231, 229, 229, 0.893);
+        width: 70%; /* Mantiene el ancho */
+        text-align: center; /* Centra el texto */
+        margin: 0; /* Elimina márgenes que podrían causar saltos */
+        font-size: x-large;
+    }
+    
+
+
+    .video-container {
+        /* border: 2px solid red; */
+        width: 50%; /* Ajusta el ancho según sea necesario */
+        height: 40%; /* Permite que el contenedor ajuste su altura automáticamente */
+        max-width: 800px; /* Ancho máximo */
+        overflow: hidden; /* Para que no se desborde el contenido */
+        margin-top: 5%; /* Espaciado superior para el video */
+    }
+    
+    video {
+        width: 100%; /* El vídeo ocupará todo el ancho del contenedor */
+        height: 100%; /* Mantiene la proporción del vídeo */
+    }
+    
+}
+
+
+@media (min-width: 500px) and (max-width: 1500px) {
+    #logo{
+        /* border: 2px solid red; */
+        height: 80px;
+        width: 200px;
+        margin-left: 100px;
+        
+    }
+
+    .menu{
+        border:1px solid greenyellow;
+        width: 50%;
+        gap:10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;  
+        margin-right: 50px;
+    }
+}
+
+.header {
+    height: 80px; /* Reduce la altura del header */
+    flex-direction: column; /* Cambia la dirección del flex a columna */
+}
+
+#logo {
+    height: 60px; /* Ajusta la altura del logo */
+    width: auto; /* Permite que el ancho se ajuste automáticamente */
+    margin-left: 0; /* Elimina el margen izquierdo */
+    margin-bottom: 10px; /* Agrega un margen inferior para separación */
+}
+
+.menu {
+    width: 100%; /* Cambia el ancho del menú a 100% */
+    margin-right: 0; /* Elimina el margen derecho */
+    justify-content: space-around; /* Cambia la justificación para mejor distribución */
+}
+
+a {
+    font-size: medium; /* Reduce el tamaño de la fuente para enlaces */
 }
