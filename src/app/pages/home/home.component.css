@@ -7,15 +7,12 @@ body {
 
 .padre {
     width: 100%;
-<<<<<<< HEAD
-    height:100vh;
-=======
-    height: 79vh;
->>>>>>> dia1
+    height: 100vh;
     display: flex;
     flex-direction: column; /* Cambiado a columna para evitar problemas de alineación */
     justify-content: center; /* Centra verticalmente */
     align-items: center; /* Centra horizontalmente */
+    border: 2px solid red; /* Añadido borde */
 }
 
 .hijo {
@@ -26,36 +23,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 2px solid greenyellow; /* Añadido borde */
 }
-
-
-<<<<<<< HEAD
-    .padre {
-        border: 2px solid red;
-        width: 100%;
-        height:73vh;
-        display: flex;
-        flex-direction: column; /* Cambiado a columna para evitar problemas de alineación */
-        justify-content: center; /* Centra verticalmente */
-        align-items: center; /* Centra horizontalmente */
-    }
-
-
-    .hijo {
-        border: 2px solid greenyellow;
-        width: 100%; /* Reduce el ancho para que no ocupe todo el espacio */
-        height: 100%; /* Permite que la altura se ajuste automáticamente */
-    }
-=======
-
-
-
->>>>>>> dia1
 
 h1 {
     color: white;
     text-align: center;
-    
+    /* padding-top: 5px; */
 }
 
 h2 {
@@ -65,23 +39,15 @@ h2 {
     margin: 0; /* Elimina márgenes que podrían causar saltos */
 }
 
-
-
-#h2o {
-    display:none;
-}
-
-
-
 .highlight {
     color: rgb(255, 221, 0); /* Color de la palabra resaltada */
     color: white;
     text-shadow: 
-    0 0 5px #ffffff, /* Brillo blanco */
-    0 0 10px #ffffff, /* Brillo más fuerte */
-    0 0 15px #abaaab, /* Brillo de color */
-    0 0 20px #9a989a, /* Brillo más fuerte de color */
-    0 0 25px #797779; /* Brillo aún más fuerte de color */
+        0 0 5px #ffffff, /* Brillo blanco */
+        0 0 10px #ffffff, /* Brillo más fuerte */
+        0 0 15px #abaaab, /* Brillo de color */
+        0 0 20px #9a989a, /* Brillo más fuerte de color */
+        0 0 25px #797779; /* Brillo aún más fuerte de color */
 }
 
 .video-container {
@@ -97,34 +63,15 @@ video {
     height: auto; /* Mantiene la proporción del vídeo */
 }
 
-<<<<<<< HEAD
 @media (min-width: 500px) and (max-width: 1500px) {
-   
-
- 
     .padre {
-        border: 2px solid red;
-        width: 100%;
-        height:73vh;
-        display: flex;
-        flex-direction: column; /* Cambiado a columna para evitar problemas de alineación */
-        justify-content: center; /* Centra verticalmente */
-        align-items: center; /* Centra horizontalmente */
-    }
-
-
-    .hijo {
-        border: 2px solid greenyellow;
-        width: 100%; /* Reduce el ancho para que no ocupe todo el espacio */
-        height: 100%; /* Permite que la altura se ajuste automáticamente */
+        height: 73vh; /* Ajusta la altura para pantallas más grandes */
     }
 
     h1 {
         color: white;
         text-align: center;
         font-size: xx-large;
-        /* border: 2px solid greenyellow; */
-        
     }
     
     h2 {
@@ -134,15 +81,10 @@ video {
         margin: 0; /* Elimina márgenes que podrían causar saltos */
         font-size: x-large;
     }
-    
-
 
     .video-container {
-        /* border: 2px solid red; */
         width: 50%; /* Ajusta el ancho según sea necesario */
         height: 40%; /* Permite que el contenedor ajuste su altura automáticamente */
-        max-width: 800px; /* Ancho máximo */
-        overflow: hidden; /* Para que no se desborde el contenido */
         margin-top: 5%; /* Espaciado superior para el video */
     }
     
@@ -150,52 +92,8 @@ video {
         width: 100%; /* El vídeo ocupará todo el ancho del contenedor */
         height: 100%; /* Mantiene la proporción del vídeo */
     }
-    
 }
 
-
-@media (min-width: 500px) and (max-width: 1500px) {
-    #logo{
-        /* border: 2px solid red; */
-        height: 80px;
-        width: 200px;
-        margin-left: 100px;
-        
-    }
-
-    .menu{
-        border:1px solid greenyellow;
-        width: 50%;
-        gap:10px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;  
-        margin-right: 50px;
-    }
-}
-
-.header {
-    height: 80px; /* Reduce la altura del header */
-    flex-direction: column; /* Cambia la dirección del flex a columna */
-}
-
-#logo {
-    height: 60px; /* Ajusta la altura del logo */
-    width: auto; /* Permite que el ancho se ajuste automáticamente */
-    margin-left: 0; /* Elimina el margen izquierdo */
-    margin-bottom: 10px; /* Agrega un margen inferior para separación */
-}
-
-.menu {
-    width: 100%; /* Cambia el ancho del menú a 100% */
-    margin-right: 0; /* Elimina el margen derecho */
-    justify-content: space-around; /* Cambia la justificación para mejor distribución */
-}
-
-a {
-    font-size: medium; /* Reduce el tamaño de la fuente para enlaces */
-=======
-/* Media Queries para dispositivos móviles */
 @media (max-width: 768px) {
     .padre {
         height: auto; /* Ajusta la altura para que se adapte al contenido */
@@ -203,9 +101,8 @@ a {
     }
 
     h1 {
-        display: none;
+        display: none; /* Oculta el h1 en móviles */
     }
-
 
     h2 {
         width: 80%; /* Aumenta el ancho en móviles */
@@ -213,39 +110,55 @@ a {
     }
     
     #h2e {
-        display:none;
+        display: none; /* Oculta el elemento con id h2e */
     }
     
-    .video-container {
-        width: 50%; /* Ajusta el ancho según sea necesario */
-        height: auto; /* Permite que el contenedor ajuste su altura automáticamente */
-        max-width: 800px; /* Ancho máximo */
-        overflow: hidden; /* Para que no se desborde el contenido */
-        margin-top: 120px; /* Espaciado superior para el video */
-        margin-bottom: 20px;
-    }
-
-    #h2o {
-        display:block;
-    
-    }
     .video-container {
         width: 90%; /* Aumenta el ancho del contenedor de video en móviles */
         margin-top: 60px; /* Reduce el margen superior */
     }
+
+    #h2o {
+        display: block; /* Muestra el elemento con id h2o */
+    }
+}
+
+@media (max-width: 768px) {
+    .padre {
+        height: auto; /* Ajusta la altura para que se adapte al contenido */
+        padding: 20px; /* Agrega padding */
+    }
+
+    h1 {
+        display: none; /* Oculta el h1 en móviles */
+    }
+
+    h2 {
+        width: 80%; /* Aumenta el ancho en móviles */
+        margin-top: 30px;
+    }
+    
+    #h2e {
+        display: none; /* Oculta el elemento con id h2e */
+    }
+    
+    .video-container {
+        width: 90%; /* Aumenta el ancho del contenedor de video en móviles */
+        margin-top: 60px; /* Reduce el margen superior */
+    }
+
+    #h2o {
+        display: block; /* Muestra el elemento con id h2o */
+    }
 }
 
 @media (max-width: 480px) {
-    
-
     h2 {
         width: 90%; /* Aumenta el ancho en móviles pequeños */
     }
-
 
     .video-container {
         width: 100%; /* El contenedor de video ocupa todo el ancho */
         margin-top: 10px; /* Reduce el margen superior */
     }
->>>>>>> dia1
 }
