@@ -297,8 +297,7 @@ button:hover {
         width: 80%; /* Aumenta el ancho en móviles */
     }
 
-    .card-container{
-    }
+    
     .card {
         width: 90%; /* Aumenta el ancho de las tarjetas en móviles */
         margin: 10px auto; /* Centra las tarjetas */
