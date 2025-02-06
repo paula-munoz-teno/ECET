@@ -1,7 +1,7 @@
 
 
 .header{
-    background-color: white(0, 0, 0, 0.82);
+    /* background-color: white(0, 0, 0, 0.82); */
     /* background-color: rgba(183, 196, 213, 0.915);
     background-color: rgb(198, 227, 166);
     background-color: black; */
@@ -27,6 +27,7 @@
     /* color:rgba(212, 202, 188, 0.412); */
     align-content: center;
     width: 50%;
+
 }
 
 .menu{
