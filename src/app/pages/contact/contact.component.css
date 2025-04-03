@@ -28,13 +28,14 @@ body {
 }
 
 .container {
+    /* border: 2px solid rgb(233, 150, 25); */
     width: 100%;
     margin: auto;
     overflow: hidden;
 }
 
 header {
-    background-color: rgb(255, 221, 0); /* Color de fondo del botón */
+    background-color: rgb(0, 255, 187); /* Color de fondo del botón */
     color: black;
     padding: 20px 0;
     text-align: center;
@@ -51,15 +52,18 @@ header {
 }
 
 .hijo2 {
+    /* border: 2px solid yellow; */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: stretch; /* Cambiado a stretch para que los formularios tengan la misma altura */
     width: 100%;
+    height: 70%;
     padding-top: 40px;
 }
 
 .form-section {
+    /* border: 2px solid red; */
     background: #ffffff;
     width: 25%;
     padding: 20px;
@@ -68,9 +72,10 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Cambiado a space-between para alinear los elementos */
+    /* justify-content: center; */
+     /* Cambiado a space-between para alinear los elementos */
     align-items: center;
-    height: 620px;
+    height: 90%;
     
 }
 
@@ -81,6 +86,7 @@ h1 {
     justify-content: flex-start; /* Cambiado a flex-start para alinear los elementos al inicio */
     align-items: center;
     margin-top: 60px;
+    margin-bottom: 30px;
 }
 
 .H {
@@ -88,12 +94,17 @@ h1 {
 }
 
 
-
 h2 {
     color: #35424a;
     margin: 0; /* Asegúrate de que no haya margen que afecte la alineación */
     padding-top: 30px;
 }
+
+h4{
+    /* border: 2px solid red; */
+    margin-bottom: 20px;
+}
+
 
 label {
     display: block;
@@ -111,16 +122,19 @@ textarea {
 }
 
 .button-container {
+    /* border: 2px solid rgb(47, 255, 116); */
+    height: 200px;
     display: flex;
     flex-direction: column; /* Alinea el enlace y el botón verticalmente */
     align-items: center; /* Centra el contenido */
     justify-content: center;
-    margin-top: 10px; /* Espacio entre el enlace y el botón */
+    margin-top: 80px; /* Espacio entre el enlace y el botón */
     margin-bottom: 25px;
 }
 
 button {
     background: #35424a;
+    background-color: rgb(76, 106, 130);
     color: #ffffff;
     border: none;
     padding: 10px 15px;
@@ -130,10 +144,16 @@ button {
     margin: 10px 0; /* Margen vertical para separación */
 }
 
+
+button:hover {
+    background-color: rgb(65, 122, 168);
+
+}
+
 #coop {
     width: 250px;
-    margin-top: 60px;
-    margin-bottom: 50px;
+    margin-top: 70px;
+    margin-bottom: 0px;
 }
 
 #participation {
@@ -153,8 +173,26 @@ button {
     color: rgb(10, 141, 207);
 }
 
-button:hover {
-    background-color: rgb(255, 221, 0); /* Color de fondo del botón */
-    background-color: rgb(65, 122, 168);
 
+
+/* Media Queries para ajustar el tamaño de las tarjetas */
+@media (max-width: 1200px) {
+    .form-section {
+        width: 40%; /* Aumenta el ancho de las secciones de formulario en pantallas medianas */
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+}
+
+@media (max-width: 800px) {
+    .form-section {
+        width: 60%; /* Aumenta el ancho de las secciones de formulario en pantallas más pequeñas */
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+}
+
+@media (max-width: 500px) {
+    .form-section {
+        width: 90%; /* Las secciones de formulario ocupan casi todo el ancho en móviles */
+        height: auto; /* Ajusta la altura automáticamente */
+    }
 }

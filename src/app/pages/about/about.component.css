@@ -28,7 +28,7 @@
     background-color: rgb(35, 35, 35);
     /* background-color: white; */
     /* background-color: black; */
-    /* border: 2px solid greenyellow; */
+    border: 2px solid greenyellow;
     height:100%;
     width:100%;
     display:flex;
