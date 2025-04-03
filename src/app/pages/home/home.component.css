@@ -79,7 +79,7 @@ video {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border: 2px solid greenyellow; 
+        /* border: 2px solid greenyellow;  */
         /* Añadido borde */
     }
 
