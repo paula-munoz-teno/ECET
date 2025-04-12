@@ -50,8 +50,8 @@ a{
 }
 
 .hijo2 {
-    border: 2px solid greenyellow;
-    height: 60%; /* Ajusta según sea necesario */
+    border: 2px solid rgb(255, 189, 47);
+    height: 70%; /* Ajusta según sea necesario */
     width: 90%;
     display: flex;
     flex-direction: row;
@@ -64,7 +64,7 @@ a{
 
 .hijo21 {
     border: 2px solid greenyellow;
-    height: 90%; /* Asegúrate de que esto esté bien */
+    height: 70%; /* Asegúrate de que esto esté bien */
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -162,6 +162,7 @@ h2{
     margin-top: 15px;
 }
  */
+ 
  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
  body {
