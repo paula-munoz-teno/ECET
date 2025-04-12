@@ -9,7 +9,7 @@ body {
 
 .padre {
     width: 100%;
-    height: 79vh;
+    height: 75vh;
     display: flex;
     flex-direction: row;
 }
@@ -32,14 +32,10 @@ body {
     width: 100%;
     margin: auto;
     overflow: hidden;
+
 }
 
-header {
-    background-color: rgb(0, 255, 187); /* Color de fondo del botón */
-    color: black;
-    padding: 20px 0;
-    text-align: center;
-}
+
 
 .social-links {
     margin: 10px 0;
@@ -57,25 +53,26 @@ header {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: stretch; /* Cambiado a stretch para que los formularios tengan la misma altura */
+    align-items: center;
     width: 100%;
     height: 70%;
-    padding-top: 40px;
+    padding-top: 0px;
 }
 
 .form-section {
     /* border: 2px solid red; */
     background: #ffffff;
     width: 25%;
-    padding: 20px;
+    padding: 10px 20px 10px 20px;
     margin: 10px 0;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: space-around;
      /* Cambiado a space-between para alinear los elementos */
     align-items: center;
-    height: 90%;
+    height: 400px;
     
 }
 
@@ -97,18 +94,21 @@ h1 {
 h2 {
     color: #35424a;
     margin: 0; /* Asegúrate de que no haya margen que afecte la alineación */
-    padding-top: 30px;
+    /* border: 2px solid red; */
+    text-align: center;
+    margin-bottom: 0px;
 }
 
 h4{
     /* border: 2px solid red; */
+    margin-top: 0px;
     margin-bottom: 20px;
 }
 
 
 label {
     display: block;
-    margin: 10px 0 5px;
+    margin: 0px 0 5px;
 }
 
 input[type="text"],
@@ -116,19 +116,19 @@ input[type="email"],
 textarea {
     width: 90%; /* Aumenta el ancho a 90% o 100% según sea necesario */
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
 .button-container {
-    /* border: 2px solid rgb(47, 255, 116); */
-    height: 200px;
+    /* border: 5px solid rgb(47, 255, 116); */
+    height: 150px;
     display: flex;
     flex-direction: column; /* Alinea el enlace y el botón verticalmente */
     align-items: center; /* Centra el contenido */
     justify-content: center;
-    margin-top: 80px; /* Espacio entre el enlace y el botón */
+    margin-top: 70px; /* Espacio entre el enlace y el botón */
     margin-bottom: 25px;
 }
 
@@ -141,7 +141,7 @@ button {
     cursor: pointer;
     border-radius: 4px;
     width: 150px; /* Ancho fijo para todos los botones */
-    margin: 10px 0; /* Margen vertical para separación */
+    margin: 10px 0px 90px 0px; /* Margen vertical para separación */
 }
 
 
@@ -151,13 +151,13 @@ button:hover {
 }
 
 #coop {
-    width: 250px;
-    margin-top: 70px;
+    width: 200px;
+    margin-top: 30px;
     margin-bottom: 0px;
 }
 
 #participation {
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 .but {
@@ -175,24 +175,60 @@ button:hover {
 
 
 
-/* Media Queries para ajustar el tamaño de las tarjetas */
-@media (max-width: 1200px) {
-    .form-section {
-        width: 40%; /* Aumenta el ancho de las secciones de formulario en pantallas medianas */
-        height: auto; /* Ajusta la altura automáticamente */
-    }
+/* Media Query para pantallas con un ancho máximo de 1300px */
+@media (max-width: 1300px) {
+
+    
+.padre {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
-@media (max-width: 800px) {
-    .form-section {
-        width: 60%; /* Aumenta el ancho de las secciones de formulario en pantallas más pequeñas */
-        height: auto; /* Ajusta la altura automáticamente */
-    }
+.hijo {
+    background-color: rgb(6, 70, 109);
+    background-color: black;
+    background-color: rgb(35, 35, 35);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    padding: 0px 0px 40px 0px;
+    /* border:2px solid orange; */
 }
 
-@media (max-width: 500px) {
+    .hijo2 {
+        /* border: 2px solid green; */
+        flex-direction: column; /* Cambia la dirección a columna para apilar las tarjetas verticalmente */
+        align-items: center; /* Centra las tarjetas horizontalmente */
+        height: 100%; /* Permite que la altura se ajuste automáticamente */
+        justify-content: center; /* Centra verticalmente las tarjetas en el contenedor */
+    }
+
     .form-section {
-        width: 90%; /* Las secciones de formulario ocupan casi todo el ancho en móviles */
-        height: auto; /* Ajusta la altura automáticamente */
+        width: 50%; /* Aumenta el ancho de las secciones de formulario para que ocupen más espacio */
+       height: 400px;
+        margin: 30px 0; /* Añade margen vertical entre las tarjetas */
+        padding: 20px; /* Añade padding interno a las tarjetas */
+        display: flex; /* Asegura que el contenido interno se pueda centrar */
+        flex-direction: column; /* Mantiene la dirección de los elementos internos en columna */
+        justify-content: center; /* Centra el contenido verticalmente */
+        align-items: center; /* Centra el contenido horizontalmente */
+        /* border: 2px solid red; */
+    }
+
+    h1 {
+        margin-top: 40px; /* Reduce el margen superior del h1 */
+        margin-bottom: 20px; /* Reduce el margen inferior del h1 */
+        text-align: center; /* Centra el texto del encabezado */
+    }
+
+    button {
+        width: 100%; /* Hace que los botones ocupen todo el ancho disponible */
+        margin: 10px 0; /* Ajusta el margen vertical */
+        
     }
 }

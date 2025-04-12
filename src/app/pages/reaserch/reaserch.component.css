@@ -1,13 +1,4 @@
-/* .padre{
-    border:2px solid orange;
-    background-color:rgb(6, 70, 109);
-    width: 100%;
-    height:89vh;
-    display:flex;
-    flex-direction: row;
-    margin-top: 15px;
-}
- */
+
  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
  body {
@@ -17,9 +8,9 @@
  .padre{
     /* border:2px solid orange; */
     width: 100%;
-    height:79vh;
+    height: 75vh;
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 h3{
@@ -29,8 +20,6 @@ h3{
 }
 
 .hijo{
-    background-color:rgb(6, 70, 109);
-    background-color: black;
     background-color: rgb(35, 35, 35);
     /* background-color: white; */
     /* background-color: black; */
@@ -39,7 +28,7 @@ h3{
     width:100%;
     display:flex;
     flex-direction: column;
-    justify-content: left;
+    justify-content:center;
     align-items:center;
     padding: 0px 0px 40px 0px;
 }
@@ -55,33 +44,33 @@ h1{
 a{
     color:white;
     padding-top: 40px;
+    margin-bottom: 30px;
     
 
 }
-.hijo2{
-       /* border: 2px solid greenyellow; */
-    height:70%;
-    width:90%;
-    display:flex;
+
+.hijo2 {
+    border: 2px solid greenyellow;
+    height: 60%; /* Ajusta según sea necesario */
+    width: 90%;
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    padding: 0px 0px 40px 0px;
-    margin-top: 100px;
+    padding: 0px 0px 30px 0px;
+    margin-top: 80px;
     flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en la siguiente línea */
-
 }
 
-
-.hijo21{
-    /* border: 2px solid greenyellow; */
- height:100%;
- width:30%;
- display:flex;
- flex-direction: column;
- justify-content: space-evenly;
- align-items: center;
- padding: 0px 0px 40px 0px;
+.hijo21 {
+    border: 2px solid greenyellow;
+    height: 90%; /* Asegúrate de que esto esté bien */
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 0px 40px 0px;
 }
 
 
@@ -322,7 +311,8 @@ h2{
 @media (max-width: 1350px) {
     /* Ajustes para el contenedor principal */
     .padre {
-        border: 2px solid red; /* Cambia el borde para identificar el contenedor */
+        /* border: 2px solid red;  */
+        /* Cambia el borde para identificar el contenedor */
         height: auto; /* Permite que la altura se ajuste automáticamente */
         flex-direction: column; /* Cambia la dirección del flex a columna */
         margin-top: 10px; /* Ajusta el margen superior */

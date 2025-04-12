@@ -4,7 +4,7 @@ body {
 
 .padre {
     width: 100%;
-    height:79vh;
+    height:75vh;
     display: flex;
     flex-direction: row;
 }
@@ -20,6 +20,7 @@ body {
     justify-content: left;
     align-items: center;
     padding: 0px 0px 40px 0px;
+    /* border: 2px solid yellow; */
 }
 
 h1 {
@@ -28,25 +29,9 @@ h1 {
     margin-bottom: 60px;
 }
 
-#isi #ecet{
-    width: 400px;
 
-}
-
-.card{
-    /* border:2px solid red; */
-    width:450px;
-    height: 550px;
-    background-color: white;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
 .hijo2 {
-    height: 60%;
+    height: 50%;
     /* border: 2px solid red; */
     /* background-color: #f0eded; */
     border-radius: 15px;
@@ -58,6 +43,27 @@ h1 {
     padding: 0px 0px 40px 0px;
     margin-top: 60px;
 }
+
+#isi #ecet{
+    width: 400px;
+
+}
+
+
+
+.card{
+    /* border:2px solid red; */
+    width:450px;
+    height: auto;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
 
 .container {
     position: relative;
@@ -137,17 +143,22 @@ h3{
 
 
 
-@media (max-width: 1300px) {
+@media (max-width: 1800px) {
+
+
     .padre {
-        height: auto; /* Permite que la altura se ajuste automáticamente */
+        height: 100%; /* Permite que la altura se ajuste automáticamente */
         flex-direction: column; /* Cambia la dirección del flex a columna */
         margin-top: 10px; /* Ajusta el margen superior */
     }
 
+   
+
     .hijo {
-        width: 90%; /* Ajusta el ancho de los hijos */
+        width: 100%; /* Ajusta el ancho de los hijos */
         padding: 20px; /* Agrega un poco de padding */
         align-items: center; /* Centra los elementos dentro de hijo */
+        /* border: 2px solid red; */
     }
 
     h1 {
@@ -163,7 +174,7 @@ h3{
     }
 
     .card {
-        width: 90%; /* Ajusta el ancho de las tarjetas */
+        width: 60%; /* Ajusta el ancho de las tarjetas */
         height: auto; /* Permite que la altura se ajuste automáticamente */
         margin: 10px auto; /* Agrega margen vertical entre tarjetas y centra */
     }
@@ -172,10 +183,11 @@ h3{
         flex-direction: column; /* Cambia la dirección del flex a columna */
         align-items: center; /* Centra los elementos */
         margin-top: 30px; /* Reduce el margen superior */
+        background-color: 2px solid yellow;
     }
 
     .image-container {
-        width: 90%; /* Ajusta el ancho de la imagen */
+        width: 70%; /* Ajusta el ancho de la imagen */
         margin: 0 auto; /* Centra el contenedor de la imagen */
     }
 
