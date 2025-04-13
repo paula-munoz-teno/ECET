@@ -50,7 +50,7 @@ a{
 }
 
 .hijo2 {
-    border: 2px solid rgb(255, 189, 47);
+    /* border: 2px solid rgb(255, 189, 47); */
     height: 70%; /* Ajusta según sea necesario */
     width: 90%;
     display: flex;
@@ -63,7 +63,6 @@ a{
 }
 
 .hijo21 {
-    border: 2px solid greenyellow;
     height: 70%; /* Asegúrate de que esto esté bien */
     width: 30%;
     display: flex;
@@ -172,7 +171,7 @@ h2{
  .padre{
     /* border:2px solid orange; */
     width: 100%;
-    height:79vh;
+    height:75vh;
     display:flex;
     flex-direction: row;
 }
