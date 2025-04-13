@@ -26,3 +26,7 @@ a{
 
 
 
+/* Media query para pantallas con un ancho máximo de 768px */
+@media (max-width: 768px) {
+    
+}

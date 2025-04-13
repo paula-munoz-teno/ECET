@@ -549,7 +549,7 @@ button:hover {
 }
 
 
-@media (max-width: 570px) {
+@media (max-width: 680px) {
     h1 {
         font-size: 1.5em; /* Ajusta el tamaño de fuente del título */
     }
@@ -575,3 +575,50 @@ button:hover {
     }
 }
 
+@media (max-width: 680px) {
+    /* Ocultar el mensaje del comité de ética */
+    .hijo h3 {
+        display: none; /* Oculta el mensaje del comité de ética */
+    }
+
+    /* Ajustar el ancho de las tarjetas */
+    .card {
+        width: 90%; /* Las tarjetas ocupan el 90% del ancho */
+        margin: 10px auto; /* Centra las tarjetas */
+    }
+
+    /* Asegurarse de que el contenido de "¿Qué es ECET project?" esté dentro de su recuadro */
+    #uam {
+        margin: 0; /* Elimina márgenes para evitar solapamientos */
+        padding: 10px; /* Agrega un poco de padding para separación */
+    }
+
+    /* Ocultar el acceso a la versión preliminar */
+    .button {
+        display: none; /* Oculta el botón de acceso a la versión preliminar */
+    }
+
+    li{
+        display:none;
+    }
+
+    /* Ajustar el texto de "¿Por qué surge el proyecto?" */
+    .card h2 {
+        text-align: center; /* Centra el texto del título */
+    }
+
+    /* Ajustar el texto de "¿Por qué debe continuar el proyecto?" */
+    .card:last-child p {
+        margin-top: 10px; /* Agrega margen superior para separación */
+    }
+
+    /* Asegurarse de que el contenido no se solape */
+    .evidence {
+        flex-direction: column; /* Cambia a columna para evitar solapamientos */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .evidence2 {
+        margin: 10px 0; /* Agrega margen vertical entre evidencias */
+    }
+}

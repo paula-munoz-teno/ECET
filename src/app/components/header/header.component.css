@@ -90,7 +90,8 @@ a{
     .header {
         flex-direction: column; /* Cambia la dirección del flex a columna */
         height: auto; /* Permite que la altura se ajuste automáticamente */
-        padding: 10px 0; /* Agrega un poco de padding para separación */
+        padding: 10px 0; 
+        /* Agrega un poco de padding para separación */
     }
 
     #logo {
