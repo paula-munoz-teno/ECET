@@ -103,12 +103,16 @@ h4{
     /* border: 2px solid red; */
     margin-top: 0px;
     margin-bottom: 20px;
+    text-align: center; /* Centra el texto del encabezado */
+
 }
 
 
 label {
     display: block;
     margin: 0px 0 5px;
+    text-align: center; /* Centra el texto del encabezado */
+
 }
 
 input[type="text"],
@@ -231,4 +235,8 @@ button:hover {
         margin: 10px 0; /* Ajusta el margen vertical */
         
     }
-}
+
+    h2{
+        margin-bottom: 20px;
+    }
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
